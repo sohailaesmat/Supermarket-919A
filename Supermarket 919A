@@ -1,0 +1,18 @@
+#include <iostream>
+#include <algorithm>
+#include <iomanip>
+using namespace std;
+
+int main()
+{int super,n;
+    cin>>super>>n;
+    double arr[super],a,b;
+    for(int i=0;i<super;i++)
+    {
+        cin>>a>>b;
+        arr[i]=(a/b)*n;
+    }
+sort( (arr) , arr + super);
+    cout <<setprecision(9) << arr[0];
+    return 0;
+}
